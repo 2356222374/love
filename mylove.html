@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<link rel="stylesheet" type="text/css" href="css/css.css">
+<link rel="stylesheet" type="text/css" href="css/lovecss.css">
+<link rel="stylesheet" type="text/css" href="css/danmu.css">
+<body>
+	<div><audio id='audio' src='music/mylove.mp3' controls="controls" autoplay loop="true" hidden="true"></audio>
+   		<button  onclick='playBgMusic()'>play music</button>
+ 		<button  onclick='pauseBgMusic()'>pause music</button>
+	</div>
+
+    
+		<div class="heart">
+          <div class="cube">
+              <div>
+                  <img src="images/mylove/1.jpg" width="100" height="100" alt="">
+              </div>
+              <div>
+                  <img src="images/mylove/2.jpg" width="100" height="100" alt="">
+              </div>
+             <div>
+                 <img src="images/mylove/3.jpg" width="100" height="100" alt="">
+             </div>
+             <div>
+                 <img src="images/mylove/4.jpg" width="100" height="100" alt="">
+             </div>
+             <div>
+                 <img src="images/mylove/5.jpg" width="100" height="100" alt="">
+             </div>
+             <div>
+                 <img src="images/mylove/6.jpg" width="100" height="100" alt="">
+             </div>
+			 </div>
+		 </div>	
+		 
+	
+	<canvas id="pinkboard"></canvas>
+	<!--danmu-->
+	<!--<div class="main">-->
+    <canvas id="canvas">àËË§¸çÄúµÄä¯ÀÀÆ÷²»Ö§³Öcanvas¸Ï½ôÈ¥Éý¼¶°É</canvas>
+	<!--</div>-->
+
+</body>
+<script>
+       function playBgMusic(){
+            var audio=document.getElementById('audio');
+            audio.play();
+        }
+				
+	 //ÔÝÍ£º¯Êý
+        function pauseBgMusic(){
+            audio.pause();
+        }
+    </script>
+<script type="text/javascript" src="js/xiaoying.js" ></script>
+ <script type="text/javascript" src="js/love.js" ></script>
+</html>
